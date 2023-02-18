@@ -8,7 +8,7 @@ const obj = {
 
 function func(prop) {
 
-  for (item in prop) {
+  for (let item in prop) {
     console.log(`${item}: ${prop[item]}`);
   }
   
