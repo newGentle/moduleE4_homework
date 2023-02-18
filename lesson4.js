@@ -48,7 +48,7 @@ const equips = [notebook, kettle];
 
 function calcWattSwitchedEqs(equips) {
   
-  for (item of equips) {
+  for (let item of equips) {
   
     if (item.isSwitched) {
       totalWatt += item.watt;
