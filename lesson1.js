@@ -9,7 +9,9 @@ const obj = {
 function func(prop) {
 
   for (let item in prop) {
-    console.log(`${item}: ${prop[item]}`);
+    if (prop.hasOwnProperty(item)) {
+      console.log(`${item}: ${prop[item]}`);
+    };
   }
   
 }
